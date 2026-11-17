@@ -482,5 +482,4 @@ $RECYCLE.BIN/
 *.swp
 
 # macOS AppleDouble files (this repo lives on an exFAT volume)
-._*
 .DS_Store
