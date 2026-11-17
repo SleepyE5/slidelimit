@@ -10,8 +10,8 @@ namespace SlideLimit;
 /// <remarks>
 /// <para>
 /// <b>Implementor contract.</b> <see cref="Apply{TState,TResult}"/> must guarantee that the
-/// <paramref name="operation"/> of the attempt that commits is the one whose result is returned,
-/// even under concurrent calls for the same key. The <paramref name="operation"/> delegate may be
+/// operation of the attempt that commits is the one whose result is returned, even under
+/// concurrent calls for the same key. The operation delegate may be
 /// invoked more than once (for example, a compare-and-swap retry) and must therefore be pure:
 /// no side effects beyond its return value. It is given the current state, or <see langword="null"/>
 /// when the key has no state, and returns the new state (<see langword="null"/> removes the key)
