@@ -7,6 +7,9 @@
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <Deterministic>true</Deterministic>
+    <!-- The repo lives on an exFAT volume; macOS scatters AppleDouble (._*) sidecar
+         files that must not enter the compile glob or git. -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);**/._*</DefaultItemExcludes>
   </PropertyGroup>
 
 </Project>
