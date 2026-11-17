@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>SlideLimit</PackageId>
+    <Version>0.1.0</Version>
+    <Description>Sliding-window-log and token-bucket rate limiting behind one small interface, with pluggable storage and an injectable clock.</Description>
+    <PackageTags>ratelimit;rate-limiting;token-bucket;sliding-window</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+</Project>
