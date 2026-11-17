@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/SlideLimit.Benchmarks/SlideLimit.Benchmarks.csproj" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/SlideLimit/SlideLimit.csproj" />
   </Folder>
