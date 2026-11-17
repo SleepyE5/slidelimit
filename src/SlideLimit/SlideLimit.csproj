@@ -7,6 +7,18 @@
     <PackageTags>ratelimit;rate-limiting;token-bucket;sliding-window</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- What nuget.org shows in the sidebar. The URL is this repository, so the
+         readme a reader lands on is the one in the tree they just installed from. -->
+    <PackageProjectUrl>https://github.com/SleepyE5/slidelimit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SleepyE5/slidelimit.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
