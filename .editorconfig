@@ -1,0 +1,30 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.cs]
+indent_style = space
+indent_size = 4
+
+# Namespaces: file-scoped, braces kept
+csharp_style_namespace_declarations = file_scoped:suggestion
+
+# Keep "this." off; the codebase is small enough to read without it
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+
+# Prefer target-typed new for locals/assignments where the type is obvious
+csharp_style_var_when_type_is_apparent = true:suggestion
+
+# Our public API is fully documented; make missing XML docs a build break (see GenerateDocumentationFile + TreatWarningsAsErrors)
+dotnet_diagnostic.CS1591.severity = warning
+
+# Nullable discipline is non-negotiable here
+dotnet_diagnostic.CS8600.severity = warning
+dotnet_diagnostic.CS8602.severity = warning
+dotnet_diagnostic.CS8604.severity = warning
